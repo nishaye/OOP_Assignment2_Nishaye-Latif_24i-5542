@@ -76,9 +76,13 @@ int main() {
     for(int i = 0; i < len; i++) {
         a1[i] = arr[i];
     }
-    ChangeLocation(a1, 2, 6); 
+    ChangeLocation(a1, 2, 5); 
     cout << "After ChangeLocation:\n";
-    for (int i=0;i<len;i++) { if (i) cout << ' '; cout << '\'' << a1[i] << '\''; } cout << "\n\n";
+    for (int i=0;i<len;i++) {
+        if (i) cout << ' ';
+        cout << '\'' << a1[i] << '\'';
+    }
+    cout << "\n\n";
 
     cout << "Print Pattern:\n";
     int n = 5;
@@ -86,3 +90,4 @@ int main() {
 
     return 0;
 }
+
